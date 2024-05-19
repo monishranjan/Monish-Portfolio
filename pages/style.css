@@ -1,0 +1,779 @@
+/* Logo Font (1920) */
+@font-face {
+    font-family: '1920';
+    src: url("assets/fonts/1920/1920____.TTF") format(truetype);
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: '1920';
+    src: url("assets/fonts/1920/1920B___.TTF");
+    font-weight: bold;
+}
+
+/* Main Font (Black Mango) */
+@font-face {
+    font-family: 'Black Mango';
+    src: url('assets/fonts/BlackMango/BlackMango-Light.ttf') format(truetype);
+    font-weight: 100;
+}
+
+@font-face {
+    font-family: 'Black Mango';
+    src: url('assets/fonts/BlackMango/BlackMango-ExtraLight.ttf') format(truetype);
+    font-weight: 200;
+}
+
+@font-face {
+    font-family: 'Black Mango';
+    src: url('assets/fonts/BlackMango/BlackMango-Thin.ttf') format(truetype);
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: 'Black Mango';
+    src: url('assets/fonts/BlackMango/BlackMango-Regular.ttf') format(truetype);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Black Mango';
+    src: url('assets/fonts/BlackMango/BlackMango-Medium.ttf') format(truetype);
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: 'Black Mango';
+    src: url('assets/fonts/BlackMango/BlackMango-SemiBold.ttf') format(truetype);
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: 'Black Mango';
+    src: url('assets/fonts/BlackMango/BlackMango-Bold.ttf') format(truetype);
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'Black Mango';
+    src: url('assets/fonts/BlackMango/BlackMango-ExtraBold.ttf') format(truetype);
+    font-weight: 800;
+}
+
+@font-face {
+    font-family: 'Black Mango';
+    src: url('assets/fonts/BlackMango/BlackMango-Black.ttf') format(truetype);
+    font-weight: 900;
+}
+/* =========================================================================================== */
+
+
+/* =========================================================================================== */
+/* Design Begins from here */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* background-color: black; */
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    background-color: #ECDCC9;
+    font-family: "Black Mango";
+    letter-spacing: 2px;
+    color: #3A3835;
+}
+
+
+/* Hero Section */
+.hero-section {
+    background: url(assets/images/bg-home.png);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+/* ------------ */
+
+
+/* Navigation Bar */
+#nav {
+    height: 100px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 2.09vw;
+    border-bottom: 3px solid #CAC2B5;
+}
+
+#temp-nav-logo {
+    opacity: 0;
+    height: 38px;
+}
+
+#text-logo{
+    font-family: "1920";
+    font-size: 60px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: #4D243D;
+}
+
+#resume-btn {
+    text-decoration: none;
+    outline: none;
+    cursor: pointer;
+    background: transparent;
+    padding: 10px 40px;
+    color: #4D243D;
+    font-family: "Black Mango";
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 2px;
+    border-radius: 200px;
+    border: 1px solid #4D243D;
+    display: flex;
+    align-items: center;
+}
+
+#resume-btn span {
+    padding-left: 10px;
+    font-size: 22px;
+}
+
+#resume-btn:hover {
+    background-color: #4D243D;
+    color: #ECDCC9;
+}
+/* ------------------------------------- */
+
+/* Profession */
+.hero-section #profession {
+    display: inline-block;
+    position: relative;
+    white-space: pre;
+    font-family: "Black Mango";
+    font-weight: 700;
+    font-size: 4vh;
+    line-height: 5.5vh;
+    padding-top: 5vh;
+    padding-right: 2.09vw;
+    display: flex;
+    justify-content: end;
+    color: #3A3835;
+}
+
+.hero-section #profession span {
+    font-size: 4vh;
+}
+/* ------------------------------------- */
+
+/* Main Area */
+.hero-section #main-area {
+    position: relative;
+    margin-left: 2.5vw;
+    display: inline-block;
+}
+
+/* Main Title */
+.hero-section #main-title {
+    margin-top: -2.09vh;
+    font-size: 12.25vh;
+    line-height: 18vh;
+    letter-spacing: -10px;
+}
+
+.hero-section #main-title span {
+    color: #4D243D;
+}
+/* ------------ */
+
+/* Contact Me Button */
+#main-area #contact-btn {
+    position: absolute;
+    font-size: 3.2vh;
+    right: -0px;
+}
+
+#main-area #contact-btn span {
+    font-size: 3.5vh;
+}
+
+#contact-btn:hover {
+    background-color: #4D243D;
+    color: #ECDCC9;
+    padding: 5px 20px;
+}
+/* ------------ */
+/* Scroll Down Button */
+/* ------------ */
+/* ------------------------------------- */
+
+/* About Me */
+.hero-section #about-me {
+    position: relative;
+    margin-top: 15vh;
+    font-size: 2.05vh;
+    display: flex;
+    justify-content: end;
+    padding-right: 12vw;
+    font-weight: 500;
+}
+/* ------------------------------------- */
+
+/* Background Image Star */
+.hero-section #star-animate img {
+    position: absolute;
+    margin-left: -19vw;
+    margin-top: -20vh;
+    height: 80vh;
+    animation-name: star-animation;
+    animation-delay: 1s;
+    animation-duration: 140s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+}
+
+/* Star Animation */
+@keyframes star-animation {
+    0%{
+        rotate: 0deg;
+    }
+    50%{
+        rotate: 360deg;
+    }
+    100%{
+        rotate: 0deg;
+    }
+}
+/* ------------------- */
+/* ------------------------------------- */
+
+
+/* ------------------------------------- */
+/* Experiences & Projects and Works Section*/
+/* .experience-section {
+    height: 100vh;
+    width: 100%;
+} */
+
+/* Thin Line Design */
+.experience-section #thin-line1 {
+    width: 100%;
+    height: 5px;
+    background-color: #3A3835;
+    margin-top: 8vh;
+}
+
+.experience-section #thin-line2 {
+    width: 100%;
+    height: 5px;
+    background-color: #3A3835;
+    margin-bottom: 8vh;
+}
+/* -------------------------- */
+
+/* Moving Text with Animation */
+.experience-section #moving-experience {
+    white-space: nowrap;
+    overflow-x: auto;
+}
+
+#moving-experience::-webkit-scrollbar {
+    display: none;
+}
+
+.exp-repeat {
+    white-space: nowrap;
+    display: inline-block;
+    animation-name: moving-texts;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+#moving-experience h1 {
+    display: inline-block;
+    font-size: 6vw;
+    margin: -20px 0px;
+    font-weight: 200;
+}
+
+#moving-experience #small-circle {
+    display: inline-block;
+    height: 7.1vh;
+    width: 3.66vw;
+    border-radius: 100%;
+    background-color: #EDD4B2;
+    border: 0.15vw solid #3A3835;
+    margin: 0.4vw 2vw;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -ms-border-radius: 100%;
+    -o-border-radius: 100%;
+}
+
+@keyframes moving-texts {
+    from {
+        transform: translateX(0);
+        -webkit-transform: translateX(0);
+        -moz-transform: translateX(0);
+        -ms-transform: translateX(0);
+        -o-transform: translateX(0);
+    }
+    to {
+        transform: translateX(-100%);
+        -webkit-transform: translateX(-100%);
+        -moz-transform: translateX(-100%);
+        -ms-transform: translateX(-100%);
+        -o-transform: translateX(-100%);
+}
+}
+/* -------------------------- */
+
+/* Experiences */
+.experience-area {
+    margin: 6vh 4vw;
+}
+
+.experience-area #exp-title {
+    /* margin: 0px 2.1w; */
+    font-size: 2.6vw;
+    color: #3A3835;
+    font-weight: 700;
+}
+
+#exp-cards {
+    display: grid;
+    overflow: hidden;
+    padding: 2.05vh 0;
+}
+
+.cards::-webkit-scrollbar {
+    display: none;
+}
+
+.cards {
+    display: flex;
+    overflow-x: auto;
+}
+
+.card {
+    background: #ECDCC9;
+    border: 2px solid #3A3835;
+    /* min-width: 300px; */
+    width: 36.5vw;
+    /* min-height: 360px; */
+    /* height: 360px; */
+    border-radius: 16px;
+    padding: .8vw;
+    /* box-shadow: 0 0 20px #000; */
+    transition: 0.3s;
+    --distance: -380px;
+}
+
+.card #dashed-line {
+    border: 2px dashed #3A3835;
+    padding: 2.09vw;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+
+    div {
+        white-space: pre;
+    }
+}
+
+.card #dashed-line #exp-title {
+    font-size: 1.6vw;
+}
+
+.card #dashed-line #exp-role {
+    font-size: 0.8vw;
+    font-weight: 600;
+}
+
+.card #dashed-line #exp-date {
+    font-size: 0.8vw;
+    font-weight: 600;
+}
+
+.card #dashed-line #exp-desc {
+    font-size: 0.8vw;
+    margin-top: 2vh;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.card:not(:first-child) {
+  margin-left: var(--distance);
+}
+
+/* .card:hover,
+.card:focus-within {
+  transform: translateY(-1rem);
+  box-shadow: 8px 5px 20px #000;
+  -webkit-transform: translateY(-1rem);
+  -moz-transform: translateY(-1rem);
+  -ms-transform: translateY(-1rem);
+  -o-transform: translateY(-1rem);
+} */
+
+.card:hover ~ .card,
+.card:focus-within ~ .card {
+  transform: translateX(calc(var(--distance) * -1));
+  -webkit-transform: translateX(calc(var(--distance) * -1));
+  -moz-transform: translateX(calc(var(--distance) * -1));
+  -ms-transform: translateX(calc(var(--distance) * -1));
+  -o-transform: translateX(calc(var(--distance) * -1));
+}
+/* -------------------------- */
+
+/* Projects */
+.projects-area {
+    /* height: 100vh; */
+    margin: 6vh 0;
+}
+
+.projects-area #project-title {
+    /* margin: 0px 2.1w; */
+    font-size: 2.6vw;
+    color: #3A3835;
+    font-weight: 700;
+}
+
+.fltr-btn {
+    padding: 1vh 2vw;
+    font-size: 0.8vw;
+    font-family: "Black Mango";
+    font-weight: 700;
+    letter-spacing: 2px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    border: 1px solid #3A3835;
+    background-color: transparent;
+    color: #3A3835;
+}
+
+.fltr-btn:hover {
+    background-color: #4D243D;
+    color: #ECDCC9;
+    border: 1px solid #3A3835;
+}
+
+#project-testing-container {
+    margin: 2vh 0;
+}
+
+.project-testing {
+    height: 150px;
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 0 2vw;
+    border-bottom: 1px solid #3A3835;
+    overflow: hidden;
+    padding: 0 2vw;
+}
+
+.project-testing .overlay-testing {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: #CAC2B5;
+    left: 0;
+    top: -100%;
+    transition: all ease 0.2s;
+    -webkit-transition: all ease 0.2s;
+    -moz-transition: all ease 0.2s;
+    -ms-transition: all ease 0.2s;
+    -o-transition: all ease 0.2s;
+}
+
+.project-testing-content {
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.project-testing-content #project-elem-title .project-category {
+    margin-top: 14px;
+    grid-column-gap: .6em;
+    grid-row-gap: .8em;
+    flex-wrap: wrap;
+    display: flex;
+}
+
+.project-category .category {
+    text-align: center;
+    letter-spacing: .1em;
+    text-transform: capitalize;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 20px;
+    padding: .6em 2em;
+    font-size: 14px;
+    font-style: italic;
+    font-weight: 400;
+}
+
+.project-testing-content a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.project-testing:hover .overlay-testing{
+    top: 0;
+}
+
+.project-testing:hover .project-testing-content{
+    font-size: 1vw;
+    font-weight: 700;
+}
+
+/* Image Preview */
+.project-testing-hover-image{
+    display: none;
+    opacity: 0;
+    z-index: 20;
+}
+
+.project-testing-image {
+    height: 27.6vh;
+    width: 25.1vw;
+    border-radius: 15px;
+    position: fixed;
+    left: 50%;
+    top: 25%;
+    background-size: cover;
+    background-position: center;
+}
+
+.project-testing:hover {
+    .project-testing-hover-image {
+        display: block;
+        opacity: 1;
+    }
+}
+/* -------------------------- */
+/* -------------------------- */
+
+/* Works */
+.previous-work-area {
+    /* height: 100vh; */
+    margin: 5vw 0 0 0;
+}
+
+.previous-work-area #work-title {
+    font-size: 2.6vw;
+    color: #3A3835;
+    font-weight: 700;
+}
+
+.work-showcase {
+    width: 100%;
+    margin: 20px auto;
+    columns: 4;
+    column-gap: 20px;
+}
+
+.work-showcase .img_box {
+    width: 100%;
+    margin-bottom: 10px;
+    break-inside: avoid;
+}
+
+.work-showcase .img_box img {
+    max-width: 100%;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+/* -------------------------- */
+
+/* Contact Area */
+.contact-area {
+    height: 100vh;
+    margin: 5vw 4vw 0 4vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.contact-left {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+}
+
+.contact-left #contact-left-title #contact-title {
+    font-size: 2.6vw;
+    font-weight: 700;
+    color: #3A3835;
+    margin-bottom: 5px;
+}
+
+#contact-left-title hr {
+    border: none;
+    height: 5px;
+    width: 225px;
+    background-color: #3A3835;
+    margin-bottom: 20px;
+}
+
+.contact-input {
+    font-family: "Black Mango";
+    letter-spacing: 0.1vw;
+    width: 400px;
+    height: 50px;
+    border: none;
+    outline: none;
+    padding-left: 25px;
+    font-weight: 500;
+    color: #3A3835;
+    background-color: #ECDCC9;
+    border: 1px solid #4D243D;
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+}
+
+.contact-left textarea {
+    height: 140px;
+    padding-top: 15px;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+
+.contact-input:focus{
+    border: 1px solid #4D243D;
+    background-color: #CAC2B5;
+}
+
+.contact-input::placeholder{
+    color: #3A3835;
+}
+
+.contact-left button {
+    font-family: "Black Mango";
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    padding: 10px 40px;
+    font-size: 16px;
+    color: #4D243D;
+    background-color: transparent;
+    gap: 10px;
+    letter-spacing: 2px;
+    border: 1px solid #4D243D;
+    border-radius: 200px;
+    -webkit-border-radius: 200px;
+    -moz-border-radius: 200px;
+    -ms-border-radius: 200px;
+    -o-border-radius: 200px;
+}
+
+.contact-left button:hover {
+    background-color: #4D243D;
+    color: #ECDCC9;
+}
+
+.contact-right img {
+    width: 600px;
+}
+/* -------------------------- */
+
+/* Contact Area for Mobile */
+@media (max-width:800px) {
+    #contact-left-title hr {
+        width: 90px;
+        height: 3px;
+    }
+    .contact-input {
+        width: 80vw;
+    }
+    .contact-right{
+        display: none;
+    }
+}
+/* -------------------------- */
+/* -------------------------------------- */
+
+/* Footer Section */
+.footer-section {
+    margin: 0 4vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 3px solid #CAC2B5;
+    padding: 4vw 0;
+}
+
+
+.footer-center {
+    #text-logo {
+        text-align: center;
+        font-size: 80px;
+    }
+}
+
+/* Socials */
+.socials {
+    display: flex;
+    gap: 20px;
+}
+
+.footer-section .socials a img{
+    width: 2vw;
+}
+
+.footer-section .copyright {
+    font-size: 0.8vw;
+}
+/* ------------------- */
+
+/* Email */
+.email-area {
+    color: #3A3835;
+    text-decoration: none;
+    font-size: 1vw;
+}
+
+.email-area hr {
+    border: none;
+    height: 3px;
+    /* width: 470px; */
+    background-color: #3A3835;
+    margin-bottom: 20px;
+}
+
+.email-area:hover {
+    cursor: pointer;
+    color: #4D243D;
+}
+
+.email-area:hover hr {
+    background-color: #4D243D;
+}
+/* ------------------- */
+/* -------------------------------------- */
+/* =============================================================== */
