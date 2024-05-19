@@ -643,6 +643,7 @@ body {
     border: none;
     outline: none;
     padding-left: 25px;
+    padding-right: 25px;
     font-weight: 500;
     color: #3A3835;
     background-color: #ECDCC9;
