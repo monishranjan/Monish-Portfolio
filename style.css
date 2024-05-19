@@ -547,6 +547,7 @@ body {
     display: none;
     opacity: 0;
     z-index: 20;
+    /* box-shadow: 0 0 20px #888888; */
 }
 
 .project-testing-image {
@@ -558,12 +559,14 @@ body {
     top: 25%;
     background-size: cover;
     background-position: center;
+    box-shadow: 10px 5px 20px #888888;
 }
 
 .project-testing:hover {
     .project-testing-hover-image {
         display: block;
         opacity: 1;
+        box-shadow: 10px 5px 20px #888888;
     }
 }
 /* -------------------------- */
