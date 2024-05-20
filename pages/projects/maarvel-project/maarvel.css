@@ -91,7 +91,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 4vw 2.09vw;
+    padding: 4vw 5.23vw;
     /* border-bottom: 3px solid #CAC2B5; */
 }
 
@@ -130,13 +130,20 @@ body {
 }
 
 /* Page Content */
+/* Project Head Image */
+.head-image {
+    width: 100%;
+    padding: 0 5.23vw;
+}
+/* -------------------------------------- */
+
 /* Project Title Area */
 .project-title-area {
-    padding: 0 2.09vw;
+    padding: 0 5.23vw;
 }
 
 .project-title {
-    font-size: 50px;
+    font-size: 2vw;
 }
 
 .project-category {
@@ -159,9 +166,16 @@ body {
     font-weight: 400;
 }
 
+/* Project Timeline and Details */
+.project-detail {
+    margin-top: 2.049vh;
+    display: flex;
+    justify-content: space-between;
+}
+
 /* Project Timeline */
 .project-timeline .timeline-date {
-    width: 14%;
+    margin-top: 1vh;
     text-align: center;
     letter-spacing: .1em;
     text-transform: capitalize;
@@ -172,12 +186,93 @@ body {
     font-size: 14px;
     font-weight: 700;
 }
+/* --------------- */
+/* Project Technology Used */
+.project-tech {
+    margin-top: 1vh;
+
+    h1 {
+        margin-bottom: 1vh;
+    }
+}
+
+.tech-used {
+    display: flex;
+    grid-column-gap: .6em;
+}
+
+.project-tech .tech-used .tech-name {
+    align-items: center;
+    text-align: center;
+    letter-spacing: .1em;
+    text-transform: capitalize;
+    padding: .6em 2em;
+    border:1px solid #3A3835;
+    border-radius: 20PX;
+    -webkit-border-radius: 20PX;
+    -moz-border-radius: 20PX;
+    -ms-border-radius: 20PX;
+    -o-border-radius: 20PX;
+    font-size: 14px;
+    font-style: italic;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+/* --------------- */
 /* -------------------------------------- */
 
-/* Project Head Image */
-.head-image {
-    width: 100%;
-    padding: 0 2.09vw;
+
+/* Project Navigation */
+.project-navigation {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 8.1vh;
+}
+
+.project-navigation #nav-item {
+    align-items: center;
+    text-align: center;
+    letter-spacing: .1em;
+    text-transform: capitalize;
+    padding: 0.8em 4em;
+    /*border:1px solid #3A3835;
+    */background-color: #3A3835;
+    border-radius: 60px;
+    -webkit-border-radius: 60px;
+    -moz-border-radius: 60px;
+    -ms-border-radius: 60px;
+    -o-border-radius: 60px;
+    margin-bottom: 10px;
+
+    h4 {
+        color: #ECDCC9;
+        font-size: 14px;
+        font-weight: 400;
+    }
+}
+/* -------------------------------------- */
+
+
+/* About Project */
+.about-project {
+    margin-top: 8.1vh;
+}
+
+.about-project #about-project-desc {
+    display: flex;
+    justify-content: space-between;
+
+    #desc {
+        margin-right: 15.6vw;
+        text-align: justify;
+        text-justify: inter-word;
+        font-size: 0.94vw;
+    }
+
+    #about-project-image {
+        margin-left: 8.36vw;
+        height: 59.4vh;
+    }
 }
 /* -------------------------------------- */
 /* ---------------------------------------------------- */
