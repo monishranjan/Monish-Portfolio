@@ -193,13 +193,15 @@ body {
     position: absolute;
     font-size: 3.2vh;
     right: -0px;
+    text-decoration: none;
+    color: #3A3835;
 }
 
 #main-area #contact-btn span {
     font-size: 3.5vh;
 }
 
-#contact-btn:hover {
+#main-area #contact-btn:hover {
     background-color: #4D243D;
     color: #ECDCC9;
     padding: 5px 20px;
@@ -786,7 +788,7 @@ body {
     width: 100%;
     position: fixed;
     top: 0;
-    background-color: #ECDCC9;
+    background-color: #EDD4B2;
     z-index: 99;
     display: flex;
     align-items: center;
@@ -804,7 +806,7 @@ body {
 
 /* Background Image Star */
 #custom_loader #star-animate img {
-    position: absolute;
+    position: fixed;
     margin-left: 19vw;
     margin-top: -92vh;
     height: 80vh;
@@ -836,9 +838,9 @@ body {
 
 /* Background Image Star */
 #custom_loader #moon-animate img {
-    position: absolute;
+    position: fixed;
     margin-left: -80vw;
-    margin-top: 2vh;
+    margin-top: 5vh;
     height: 80vh;
     animation-delay: 1s;
     animation-duration: 140s;

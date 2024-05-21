@@ -22,10 +22,13 @@ tl.to("#custom_loader h1", {
 })
 tl.to("#custom_loader", {
     opacity:0,
+    display:"none",
+    z:-99,
 })
-t.to("#custom_loader", {
-    display:"none"
-})
+// t1.to("#custom_loader", {
+//     display:"none",
+// })
+
 // ====================================
 
 // Starting the Functions
